@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      - POSTGRES_USER=${DB_USER}  # Usamos la variable DB_USER del archivo .env
+      - POSTGRES_PASSWORD=${DB_PASSWORD}  # Usamos la variable DB_PASSWORD del archivo .env
+      - POSTGRES_DB=${DB_NAME}  # Usamos la variable DB_NAME del archivo .env
+    ports:
+      - "9898:5432"  # Exponemos el puerto 5432 del contenedor al 9898 de la máquina local
+    volumes:
+      - postgres_data:/var/lib/postgresql/data  # Volumen para persistencia de datos
+    networks:
+      - mynetwork  # Conectamos a la red personalizada
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"  # Exponemos el puerto 8080 del contenedor al 8080 de la máquina local
+    depends_on:
+      - db  # Aseguramos que el contenedor de la base de datos esté disponible antes de iniciar la app
+    environment:
+      - DB_NAME=${DB_NAME}  # Usamos la variable DB_NAME del archivo .env
+      - DB_USER=${DB_USER}  # Usamos la variable DB_USER del archivo .env
+      - DB_PASSWORD=${DB_PASSWORD}  # Usamos la variable DB_PASSWORD del archivo .env
+    networks:
+      - mynetwork  # Conectamos a la misma red personalizada
+
+volumes:
+  postgres_data:  # Definimos el volumen para la base de datos
+
+networks:
+  mynetwork:
+    driver: bridge  # Usamos la red de tipo bridge para los contenedores
