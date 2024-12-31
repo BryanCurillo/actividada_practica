@@ -35,4 +35,29 @@ public class ProductoService {
     public void eliminarProducto(Long idProducto) {
         repository.deleteById(idProducto);
     }
+
+    // Actualizar un Producto existente
+    public Producto actualizarProducto(Long idProducto, Producto productoActualizado) {
+        // Buscar el producto existente
+        Optional<Producto> productoExistenteOptional = repository.findById(idProducto);
+
+        if (productoExistenteOptional.isPresent()) {
+            Producto productoExistente = productoExistenteOptional.get();
+
+            // Actualizar los campos del producto con los valores proporcionados
+            productoExistente.setDescripcion(productoActualizado.getDescripcion());
+            productoExistente.setStock(productoActualizado.getStock());
+            productoExistente.setPrecioUnitario(productoActualizado.getPrecioUnitario());
+            productoExistente.setUnidad(productoActualizado.getUnidad());
+            productoExistente.setIva(productoActualizado.isIva());
+            productoExistente.setIdProveedor(productoActualizado.getIdProveedor());
+            productoExistente.setIdClasificacion(productoActualizado.getIdClasificacion());
+
+            // Guardar el producto actualizado y retornarlo
+            return repository.save(productoExistente);
+        } else {
+            // Si el producto no existe, lanzar una excepción o retornar un valor nulo
+            throw new RuntimeException("Producto no encontrado con ID: " + idProducto);
+        }
+    }
 }

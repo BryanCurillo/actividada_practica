@@ -23,6 +23,17 @@ public class ProductoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(nuevoProducto);
     }
 
+    @PutMapping("/updateProducto/{idproducto}")
+    public ResponseEntity<Producto> updateProducto(@PathVariable Long idproducto, @RequestBody Producto producto) {
+        try {
+            Producto productoActualizado = service.actualizarProducto(idproducto, producto);
+            return ResponseEntity.status(HttpStatus.OK).body(productoActualizado);
+        } catch (RuntimeException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).build(); // Producto no encontrado
+        }
+    }
+
+
     // Obtener un Producto por su ID
     @GetMapping("/obtProductoPorId/{id}")
     public ResponseEntity<Producto> obtProductoPorId(@PathVariable Long id) {

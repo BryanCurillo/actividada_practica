@@ -1,6 +1,7 @@
 package com.guia.practica.service;
 
 import com.guia.practica.model.ItemFactura;
+import com.guia.practica.model.Usuario;
 import com.guia.practica.repository.FacturaRepository;
 import com.guia.practica.repository.ItemFacturaRepository;
 import jakarta.transaction.Transactional;
@@ -34,4 +35,10 @@ public class ItemFacturaService {
     // Eliminar un ItemFactura por su ID
     public void eliminarItemFactura(Long idItemFactura) {
         repository.deleteById(idItemFactura);
-    }}
+    }
+
+    public List<ItemFactura> itemsFact(Long idfactura) {
+        List<ItemFactura> itemsFactura = repository.itemsFact(idfactura);
+        return itemsFactura;
+    }
+}

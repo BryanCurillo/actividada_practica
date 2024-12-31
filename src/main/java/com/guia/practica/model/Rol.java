@@ -32,7 +32,8 @@ public class Rol implements Serializable {
     @JoinTable(
             name = "rol_competencia",
             joinColumns = @JoinColumn(name = "id_rol"),
-            inverseJoinColumns = @JoinColumn(name = "id_competencia")
+            inverseJoinColumns = @JoinColumn(name = "id_competencia"),
+            uniqueConstraints = @UniqueConstraint(columnNames = {"id_rol", "id_competencia"})
     )
     private List<Competencia> competencias;
 }

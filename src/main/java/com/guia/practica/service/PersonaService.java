@@ -1,6 +1,7 @@
 package com.guia.practica.service;
 
 import com.guia.practica.model.Persona;
+import com.guia.practica.model.Persona;
 import com.guia.practica.repository.ClasificacionRepository;
 import com.guia.practica.repository.PersonaRepository;
 import jakarta.persistence.EntityManager;
@@ -13,6 +14,8 @@ import org.springframework.stereotype.Service;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -57,6 +60,26 @@ public class PersonaService {
             e.printStackTrace();
         }
         return nombreCompleto;
+    }
+
+    // Guardar o actualizar un Persona
+    public Persona savePersona(Persona persona) {
+        return repository.save(persona);
+    }
+
+    // Obtener un Persona por su ID
+    public Optional<Persona> obtenerPersonaPorId(Long idPersona) {
+        return repository.findById(idPersona);
+    }
+
+    // Listar todos los Personas
+    public List<Persona> listarPersonas() {
+        return repository.findAll();
+    }
+
+    // Eliminar un Persona por su ID
+    public void eliminarPersona(Long idPersona) {
+        repository.deleteById(idPersona);
     }
 }
 

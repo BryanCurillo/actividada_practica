@@ -1,6 +1,7 @@
 package com.guia.practica.controller;
 
 import com.guia.practica.model.ItemFactura;
+import com.guia.practica.model.Usuario;
 import com.guia.practica.service.FacturaService;
 import com.guia.practica.service.ItemFacturaService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,5 +43,10 @@ public class ItemFacturaController {
     public ResponseEntity<Void> deleteItemFactura(@PathVariable Long id) {
         service.eliminarItemFactura(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/itemsFactura/{idfactura}")
+    public ResponseEntity<List<ItemFactura>> itemsFactura(@PathVariable Long idfactura) {
+        return new ResponseEntity<>(service.itemsFact(idfactura), HttpStatus.OK);
     }
 }

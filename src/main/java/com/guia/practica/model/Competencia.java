@@ -18,6 +18,7 @@ public class Competencia implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idCompetencia;
+    @Column(unique = true)
     private String nombre;
     private String descripcion;
     @ManyToMany(mappedBy = "competencias")

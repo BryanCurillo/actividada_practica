@@ -19,6 +19,7 @@ public class Proveedores implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idProveedor;
+    @Column(unique = true)
     private String ruc;
     private String nombre;
     private String telefono;
