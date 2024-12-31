@@ -1,6 +1,5 @@
 #//EJECUTAR CON IMAGENES de docker hub
 version: '3.8'
-
 services:
   db:
     image: bryancurillo/bd_sistema_facturacion:13
@@ -34,7 +33,7 @@ networks:
 
 
 #//EJECUTAR CON IMAGENES LOCALES
-
+#
 #version: '3.8'
 #
 #services:
@@ -57,7 +56,7 @@ networks:
 #      context: .
 #      dockerfile: Dockerfile
 #    ports:
-#      - "8080:8080"  # Exponemos el puerto 8080 del contenedor al 8080 de la máquina local
+#      - "8082:8080"  # Exponemos el puerto 8080 del contenedor al 8080 de la máquina local
 #    depends_on:
 #      - db  # Aseguramos que el contenedor de la base de datos esté disponible antes de iniciar la app
 #    environment:

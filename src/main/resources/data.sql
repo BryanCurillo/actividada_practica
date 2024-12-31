@@ -17,7 +17,7 @@ VALUES (1, 'Evaluar la habilidad técnica en programación', 'Programación'),
        (8, 'Evaluar el trabajo en equipo', 'Trabajo en equipo'),
        (9, 'Evaluar la adaptabilidad a cambios', 'Adaptabilidad'),
        (10, 'Evaluar la resolución de conflictos', 'Resolución de conflictos')
-ON CONFLICT (nombre) DO NOTHING;
+ON CONFLICT (id_competencia) DO NOTHING;
 
 INSERT INTO rol_competencia (id_rol, id_competencia)
 VALUES ('ADMIN', 1), -- ADMIN -> Programación
