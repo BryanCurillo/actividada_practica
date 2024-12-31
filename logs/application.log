@@ -9695,3 +9695,208 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 2024-12-30T03:46:34.545-05:00  INFO 2612 --- [Actividad Practica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-12-30T03:46:34.548-05:00  INFO 2612 --- [Actividad Practica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-12-30T03:46:34.551-05:00  INFO 2612 --- [Actividad Practica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-30T18:29:01.675-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Starting GuiaPracticaU1Application using Java 17.0.8 with PID 23944 (D:\UNIVERSITARIO\app seguras\actividad_practica\target\classes started by Arkadyan in D:\UNIVERSITARIO\app seguras\actividad_practica)
+2024-12-30T18:29:01.678-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-30T18:29:01.679-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : No active profile set, falling back to 1 default profile: "default"
+2024-12-30T18:29:01.734-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-30T18:29:01.735-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-30T18:29:02.671-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30T18:29:02.756-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 10 JPA repository interfaces.
+2024-12-30T18:29:03.358-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-30T18:29:03.373-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-30T18:29:03.373-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-30T18:29:03.434-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-30T18:29:03.434-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1699 ms
+2024-12-30T18:29:03.554-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30T18:29:03.623-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-30T18:29:03.667-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-30T18:29:04.061-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30T18:29:04.099-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-30T18:29:04.302-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@25c1cf0b
+2024-12-30T18:29:04.305-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-30T18:29:05.352-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30T18:29:05.681-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T18:29:05.925-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-30T18:29:06.304-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] c.g.p.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-30T18:29:06.479-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-30T18:29:06.480-05:00  WARN 23944 --- [Actividad Practica] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-30T18:29:06.791-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Deferred [Mvc [pattern='/auth/**'], Ant [pattern='/auth/**']]
+2024-12-30T18:29:06.809-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2024-12-30T18:29:06.815-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, FilterSecurityInterceptor
+2024-12-30T18:29:06.930-05:00  WARN 23944 --- [Actividad Practica] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-30T18:29:07.055-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30T18:29:07.104-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-30T18:29:07.114-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Started GuiaPracticaU1Application in 5.887 seconds (process running for 6.916)
+2024-12-30T18:34:07.961-05:00  INFO 23944 --- [Actividad Practica] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-12-30T18:34:08.445-05:00  INFO 23944 --- [Actividad Practica] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T18:34:08.448-05:00  INFO 23944 --- [Actividad Practica] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-30T18:34:08.451-05:00  INFO 23944 --- [Actividad Practica] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-30T18:34:08.523-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Starting GuiaPracticaU1Application using Java 17.0.8 with PID 23944 (D:\UNIVERSITARIO\app seguras\actividad_practica\target\classes started by Arkadyan in D:\UNIVERSITARIO\app seguras\actividad_practica)
+2024-12-30T18:34:08.524-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-30T18:34:08.524-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : No active profile set, falling back to 1 default profile: "default"
+2024-12-30T18:34:08.701-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30T18:34:08.737-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 10 JPA repository interfaces.
+2024-12-30T18:34:08.836-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-30T18:34:08.836-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-30T18:34:08.836-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-30T18:34:08.852-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-30T18:34:08.853-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 328 ms
+2024-12-30T18:34:08.885-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30T18:34:08.887-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-30T18:34:08.896-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30T18:34:08.897-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-30T18:34:08.950-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@75b5e7b9
+2024-12-30T18:34:08.951-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-30T18:34:09.151-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30T18:34:09.278-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T18:34:09.338-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] c.g.p.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-30T18:34:09.453-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-30T18:34:09.454-05:00  WARN 23944 --- [Actividad Practica] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-30T18:34:09.581-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Deferred [Mvc [pattern='/auth/**'], Ant [pattern='/auth/**']]
+2024-12-30T18:34:09.581-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2024-12-30T18:34:09.585-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, FilterSecurityInterceptor
+2024-12-30T18:34:09.628-05:00  WARN 23944 --- [Actividad Practica] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-30T18:34:09.683-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30T18:34:09.698-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-30T18:34:09.704-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Started GuiaPracticaU1Application in 1.201 seconds (process running for 309.505)
+2024-12-30T18:34:09.707-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-30T18:34:59.460-05:00  INFO 23944 --- [Actividad Practica] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2024-12-30T18:34:59.943-05:00  INFO 23944 --- [Actividad Practica] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T18:34:59.944-05:00  INFO 23944 --- [Actividad Practica] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-12-30T18:34:59.946-05:00  INFO 23944 --- [Actividad Practica] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-12-30T18:35:00.057-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Starting GuiaPracticaU1Application using Java 17.0.8 with PID 23944 (D:\UNIVERSITARIO\app seguras\actividad_practica\target\classes started by Arkadyan in D:\UNIVERSITARIO\app seguras\actividad_practica)
+2024-12-30T18:35:00.057-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-30T18:35:00.057-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : No active profile set, falling back to 1 default profile: "default"
+2024-12-30T18:35:00.256-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30T18:35:00.290-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 10 JPA repository interfaces.
+2024-12-30T18:35:00.380-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-30T18:35:00.380-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-30T18:35:00.380-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-30T18:35:00.397-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-30T18:35:00.397-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 339 ms
+2024-12-30T18:35:00.429-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30T18:35:00.431-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-30T18:35:00.438-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30T18:35:00.439-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-12-30T18:35:00.505-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.postgresql.jdbc.PgConnection@40ef4946
+2024-12-30T18:35:00.505-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-12-30T18:35:00.698-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30T18:35:00.820-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T18:35:00.878-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] c.g.p.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-30T18:35:00.975-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-30T18:35:00.975-05:00  WARN 23944 --- [Actividad Practica] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-30T18:35:01.059-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Deferred [Mvc [pattern='/auth/**'], Ant [pattern='/auth/**']]
+2024-12-30T18:35:01.060-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2024-12-30T18:35:01.061-05:00 DEBUG 23944 --- [Actividad Practica] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, FilterSecurityInterceptor
+2024-12-30T18:35:01.096-05:00  WARN 23944 --- [Actividad Practica] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-30T18:35:01.141-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30T18:35:01.153-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-30T18:35:01.157-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Started GuiaPracticaU1Application in 1.123 seconds (process running for 360.959)
+2024-12-30T18:35:01.158-05:00  INFO 23944 --- [Actividad Practica] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-12-30T18:35:38.914-05:00  INFO 23944 --- [Actividad Practica] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T18:35:38.914-05:00  INFO 23944 --- [Actividad Practica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-12-30T18:35:38.917-05:00  INFO 23944 --- [Actividad Practica] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2024-12-30T19:00:57.412-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Starting GuiaPracticaU1Application using Java 17.0.8 with PID 29972 (D:\UNIVERSITARIO\app seguras\actividad_practica\target\classes started by Arkadyan in D:\UNIVERSITARIO\app seguras\actividad_practica)
+2024-12-30T19:00:57.417-05:00 DEBUG 29972 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-30T19:00:57.419-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : No active profile set, falling back to 1 default profile: "default"
+2024-12-30T19:00:57.485-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-30T19:00:57.485-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-30T19:00:58.386-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30T19:00:58.526-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130 ms. Found 10 JPA repository interfaces.
+2024-12-30T19:00:59.307-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-30T19:00:59.320-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-30T19:00:59.321-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-30T19:00:59.375-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-30T19:00:59.376-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1889 ms
+2024-12-30T19:00:59.495-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30T19:00:59.574-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-30T19:00:59.625-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-30T19:00:59.908-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30T19:00:59.940-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-30T19:01:00.107-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@18be32fd
+2024-12-30T19:01:00.109-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-30T19:01:02.145-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30T19:01:02.307-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T19:01:02.547-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-12-30T19:01:02.908-05:00 DEBUG 29972 --- [Actividad Practica] [restartedMain] c.g.p.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-30T19:01:03.104-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-30T19:01:03.105-05:00  WARN 29972 --- [Actividad Practica] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-12-30T19:01:03.350-05:00 DEBUG 29972 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [permitAll] for Deferred [Mvc [pattern='/auth/**'], Ant [pattern='/auth/**']]
+2024-12-30T19:01:03.365-05:00 DEBUG 29972 --- [Actividad Practica] [restartedMain] edFilterInvocationSecurityMetadataSource : Adding web access control expression [authenticated] for any request
+2024-12-30T19:01:03.371-05:00 DEBUG 29972 --- [Actividad Practica] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, FilterSecurityInterceptor
+2024-12-30T19:01:03.473-05:00  WARN 29972 --- [Actividad Practica] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-12-30T19:01:03.570-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-12-30T19:01:03.607-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-30T19:01:03.617-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Started GuiaPracticaU1Application in 6.688 seconds (process running for 7.553)
+2024-12-30T19:01:35.290-05:00  INFO 29972 --- [Actividad Practica] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-30T19:01:35.290-05:00  INFO 29972 --- [Actividad Practica] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-30T19:01:35.291-05:00  INFO 29972 --- [Actividad Practica] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-12-30T19:01:35.308-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing POST /usuario/register
+2024-12-30T19:01:35.479-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-2] org.hibernate.SQL                        : select u1_0.id_usuario,u1_0.fecha_registro,u1_0.id_persona,u1_0.id_rol,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2024-12-30T19:01:35.504-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-2] org.hibernate.SQL                        : select p1_0.id_persona,p1_0.apellido,p1_0.celular,p1_0.correo,p1_0.dni,p1_0.nombre from persona p1_0 where p1_0.id_persona=?
+2024-12-30T19:01:35.520-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-2] org.hibernate.SQL                        : select r1_0.id_rol,r1_0.descripcion,r1_0.estado,r1_0.nombre from rol r1_0 where r1_0.id_rol=?
+2024-12-30T19:01:35.540-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [POST /usuario/register] with attributes [authenticated]
+2024-12-30T19:01:35.540-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured POST /usuario/register
+2024-12-30T19:01:46.953-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing POST /usuario/register
+2024-12-30T19:01:46.958-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-5] org.hibernate.SQL                        : select u1_0.id_usuario,u1_0.fecha_registro,u1_0.id_persona,u1_0.id_rol,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2024-12-30T19:01:46.960-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-5] org.hibernate.SQL                        : select p1_0.id_persona,p1_0.apellido,p1_0.celular,p1_0.correo,p1_0.dni,p1_0.nombre from persona p1_0 where p1_0.id_persona=?
+2024-12-30T19:01:46.962-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-5] org.hibernate.SQL                        : select r1_0.id_rol,r1_0.descripcion,r1_0.estado,r1_0.nombre from rol r1_0 where r1_0.id_rol=?
+2024-12-30T19:01:46.968-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-5] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [POST /usuario/register] with attributes [authenticated]
+2024-12-30T19:01:46.969-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured POST /usuario/register
+2024-12-30T19:02:07.680-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /usuario/register
+2024-12-30T19:02:07.687-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] org.hibernate.SQL                        : select u1_0.id_usuario,u1_0.fecha_registro,u1_0.id_persona,u1_0.id_rol,u1_0.password,u1_0.username from usuario u1_0 where u1_0.username=?
+2024-12-30T19:02:07.690-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] org.hibernate.SQL                        : select p1_0.id_persona,p1_0.apellido,p1_0.celular,p1_0.correo,p1_0.dni,p1_0.nombre from persona p1_0 where p1_0.id_persona=?
+2024-12-30T19:02:07.694-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] org.hibernate.SQL                        : select r1_0.id_rol,r1_0.descripcion,r1_0.estado,r1_0.nombre from rol r1_0 where r1_0.id_rol=?
+2024-12-30T19:02:07.708-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorized filter invocation [POST /usuario/register] with attributes [authenticated]
+2024-12-30T19:02:07.709-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured POST /usuario/register
+2024-12-30T19:02:07.811-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] org.hibernate.SQL                        : select null,r1_0.descripcion,r1_0.estado,r1_0.nombre from rol r1_0 where r1_0.id_rol=?
+2024-12-30T19:02:07.821-05:00 DEBUG 29972 --- [Actividad Practica] [http-nio-8080-exec-7] org.hibernate.SQL                        : insert into usuario (fecha_registro,id_persona,id_rol,password,username) values (?,?,?,?,?) returning id_usuario
+2024-12-30T19:04:02.647-05:00  INFO 29972 --- [Actividad Practica] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2024-12-30T19:04:03.215-05:00  INFO 29972 --- [Actividad Practica] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T19:04:03.217-05:00  INFO 29972 --- [Actividad Practica] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-30T19:04:03.224-05:00  INFO 29972 --- [Actividad Practica] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-30T19:04:03.344-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Starting GuiaPracticaU1Application using Java 17.0.8 with PID 29972 (D:\UNIVERSITARIO\app seguras\actividad_practica\target\classes started by Arkadyan in D:\UNIVERSITARIO\app seguras\actividad_practica)
+2024-12-30T19:04:03.344-05:00 DEBUG 29972 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-30T19:04:03.345-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] c.g.practica.GuiaPracticaU1Application   : No active profile set, falling back to 1 default profile: "default"
+2024-12-30T19:04:03.755-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30T19:04:03.804-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 10 JPA repository interfaces.
+2024-12-30T19:04:04.049-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-30T19:04:04.050-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-30T19:04:04.051-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-30T19:04:04.084-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-30T19:04:04.084-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 737 ms
+2024-12-30T19:04:04.160-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30T19:04:04.164-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-30T19:04:04.180-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30T19:04:04.183-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-30T19:04:04.244-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.postgresql.jdbc.PgConnection@58be3113
+2024-12-30T19:04:04.244-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-30T19:04:04.553-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30T19:04:04.723-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T19:04:04.835-05:00 DEBUG 29972 --- [Actividad Practica] [restartedMain] c.g.p.s.jwt.JwtAuthenticationFilter      : Filter 'jwtAuthenticationFilter' configured for use
+2024-12-30T19:04:04.988-05:00  WARN 29972 --- [Actividad Practica] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'usuarioController': Unsatisfied dependency expressed through field 'authService': No qualifying bean of type 'com.guia.practica.security.auth.AuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-12-30T19:04:04.989-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T19:04:04.989-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-12-30T19:04:05.037-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-12-30T19:04:05.038-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-12-30T19:04:05.048-05:00  INFO 29972 --- [Actividad Practica] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-30T19:04:05.080-05:00 ERROR 29972 --- [Actividad Practica] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field authService in com.guia.practica.controller.UsuarioController required a bean of type 'com.guia.practica.security.auth.AuthService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.guia.practica.security.auth.AuthService' in your configuration.
+

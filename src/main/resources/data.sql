@@ -27,6 +27,8 @@ VALUES ('Gomez', '123456789', 'gomez@example.com', '12345678', 'Juan'),
        ('Curillo', '0981101464', 'bryancurillo@gmail.com', '0106046709', 'Bryan')
 ON CONFLICT (dni) DO NOTHING;
 
+-- username: admin
+-- pasword: 1234
 INSERT INTO usuario(password, username, id_persona, id_rol)
 values ('$2a$10$EgigjHpqZChvw2cVdNVlf.0ZReo.1oqQrJqviQHNcrXeY7hVK2PEa', 'admin', 21, 'ADMIN')
 ON CONFLICT (username) DO NOTHING;
